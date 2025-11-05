@@ -15,6 +15,7 @@ $archer = new creature("Hawkeye", 120, 15, 8);
 
 echo $guerrier->getNom();
 echo "<br>";
+echo "<br>";
 echo "possède ". $guerrier->getSante(). " points de santé ";
 echo "<br>";
 echo "possède ". $guerrier->getForce(). " points de force ";
@@ -29,6 +30,7 @@ echo "<br>";
 
 echo $mage->getNom();
 echo "<br>";
+echo "<br>";
 echo "possède ".$mage->getSante(). " points de santé";
 echo "<br>";
 echo "possède " . $mage->getForce(). " points de force ";
@@ -40,15 +42,23 @@ echo "<br>";
 echo "<br>";
 echo "<br>";
 
-echo $mage->getNom();
+echo $archer->getNom();
 echo "<br>";
-echo "possède ". $mage->getSante()." points de santé";
 echo "<br>";
-echo "possède ". $mage->getForce()." points de force ";
+echo "possède ". $archer->getSante()." points de santé";
 echo "<br>";
-echo "possède ". $mage->getDefense(). " points de defense ";
+echo "possède ". $archer->getForce()." points de force ";
+echo "<br>";
+echo "possède ". $archer->getDefense(). " points de defense ";
 echo "<br>";
 echo $archer->getCrier() . " Prêt à viser !";
 echo "<br>";
 echo "<br>";
 echo "<br>";
+
+
+$archer = new archer( "Hawkeye", 150, 20, 10);
+$guerrier = new guerrier("Ichigo", 150, 20, 10);
+
+$arene = new arene();
+$arene -> lancerMatch($guerrier, $archer, 3);

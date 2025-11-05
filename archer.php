@@ -1,7 +1,7 @@
 <?php
 require_once "creature.php";
 class archer extends Creature {
-    function __construct($nom, $sante, $force, $defense) {
+    public function __construct($nom, $sante, $force, $defense) {
         parent::__construct($nom, $sante, $force, $defense);
     }
 //redefinition du cri
