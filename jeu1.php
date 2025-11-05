@@ -3,6 +3,7 @@ require_once "creature.php";
 require_once "guerrier.php";
 require_once "mage.php";
 require_once "archer.php";
+require_once "arene.php";
 
 // creation de créatures qui héritent de la classe créature
 
