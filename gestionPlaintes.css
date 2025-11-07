@@ -1,0 +1,70 @@
+body {
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+fieldset {
+    background-color: indianred;
+    text-align: justify;
+    border: black 2px solid;
+    border-radius: 26px;
+    padding: 10%;
+
+}
+
+input,
+textarea {
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type='submit'] {
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    color: white;
+}
+
+h1 {
+    text-decoration: white underline;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 4em;
+
+}
+
+table {
+    border: 2px black solid;
+    margin-left: auto;
+    margin-right: auto;
+    /* Optional: Set a width if needed */
+    width: 80%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px black solid;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 3em;
+}
+
+.button {
+    justify-content: right;
+}
+
+
+
+

@@ -64,13 +64,13 @@ class arene
        $pvInitialeC2 = $c2->getSante();
 
         while ($victoireC1 < ceil($manches/2) && $victoireC2 < ceil($manches/2)) {
-            echo " === Manche === ". $round;
+            echo "  Manche ". $round;
             echo "<br>";
             echo "<br>";
 
             // On recrée les créatures avec leurs stats initiales pour chaque manche
-            $clone1 = new creature($c1 ->getNom(), $pvInitialeC1, $c1 ->getForce(), $c1 ->getSante());
-            $clone2 = new creature ($c2 ->getNom(),$pvInitialeC2, $c2 ->getForce(), $c2 ->getSante());
+            $clone1 = new creature($c1 ->getNom(), $pvInitialeC1, $c1 ->getForce(), $c1 ->getDefense());
+            $clone2 = new creature ($c2 ->getNom(),$pvInitialeC2, $c2 ->getForce(), $c2 ->getDefense());
 
             $vainqueur = $this->lancerCombat($clone1, $clone2);
 

@@ -57,7 +57,7 @@ echo "<br>";
 echo "<br>";
 
 
-$archer = new archer( "Hawkeye", 150, 20, 10);
+$archer = new archer( "Hawkeye", 120, 20, 10);
 $guerrier = new guerrier("Ichigo", 150, 20, 10);
 
 $arene = new arene();
